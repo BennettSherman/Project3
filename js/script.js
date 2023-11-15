@@ -1,51 +1,39 @@
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-let map;
-const chicago = { lat: 41.85, lng: -87.65 };
-
-/**
- * Creates a control that recenters the map on Chicago.
- */
-function createCenterControl(map) {
-  const controlButton = document.createElement("button");
-
-  // Set CSS for the control.
-  controlButton.classList.add('buttonStyle');
-
-  controlButton.textContent = "Center Map";
-  controlButton.title = "Click to recenter the map";
-  controlButton.type = "button";
-  // Setup the click event listeners: simply set the map to Chicago.
-  controlButton.addEventListener("click", () => {
-    map.setCenter(chicago);
-  });
-  return controlButton;
-}
-
+var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: { lat: 49.496675, lng: -102.65625 },
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 41.8741, lng: -87.6285},
+    zoom: 15
   });
 
-  var georssLayer = new google.maps.KmlLayer({
-    url: "http://api.flickr.com/services/feeds/geo/?g=322338@N20&lang=en-us&format=feed-georss",
+  var school = new google.maps.Marker({
+    position: { lat: 41.8730, lng: -87.6279},
+    map: map
   });
-  georssLayer.setMap(map);
 
-  // Create the DIV to hold the control.
-  const centerControlDiv = document.createElement("div");
-  // Create the control.
-  const centerControl = createCenterControl(map);
+  var home = new google.maps.Marker({
+    position: { lat: 41.868690, lng: -87.625380 },
+    map: map
+  });
 
-  // Append the control to the DIV.
-  centerControlDiv.appendChild(centerControl);
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(
-    centerControlDiv
-  );
+  var distPoints = [
+    { lat: 41.8730, lng: -87.6279 },
+    { lat: 41.87299780452928, lng: -87.62762881329594 },
+    { lat: 41.869100, lng: -87.627030 },
+    { lat: 41.869280, lng: -87.625870 },
+    { lat: 41.868690, lng: -87.625380 },
+  ];
+
+  var dist = new google.maps.Polyline({
+    path: distPoints,
+    geodesic: true,
+    strokeColor: "#FE5F55",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  dist.setMap(map);
+
 }
 
 window.initMap = initMap;
