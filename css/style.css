@@ -1,0 +1,70 @@
+body {
+  background-color: #36486b;
+  font-family: Georgia, Times, serif;
+}
+
+#navbar {
+  background-color:#fefbd8;
+  padding: 15px;
+  margin: 25px 120px;
+  color: #618685;
+  text-align: center;
+}
+
+#resumepage {
+    margin: 3% auto;
+}
+
+@font-face {
+  font-family: "chunkfive-regular-webfont";
+  src: url(css/fonts/chunkfive-regular-webfont.woff) format('woff');
+}
+
+#customheading {
+  font-family: "chunkfiveregular";
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #36486b;
+}
+
+section {
+  background-color: #618685;
+  margin: 15px auto;
+  max-width: 850px;
+  border: 8px;
+  padding: 15px
+}
+
+img {
+  max-width: 100%;
+  height: 420px;
+  margin: auto;
+  display: block;
+  border: 12px solid #36486b;
+}
+
+/* want to keep it in case I decide to go back to ts#potatohead {
+  font-size: 120px;
+  font-weight: 460;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("frybackground.jpeg");
+  background-size: 120px;
+  background-repeat: repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0px;
+  line-height: .8;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  position: relative;
+}*/
+
+.center {
+  text-align: center;
+}
+
+
