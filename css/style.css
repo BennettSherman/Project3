@@ -26,10 +26,12 @@ body {
 
 #map {
   width: 100%;
+  border: black;
   height: 300px;
   border-radius: 15px;
   border-width: medium;
   margin: 10px auto;
+  overflow: hidden;
 }
 
 a {
