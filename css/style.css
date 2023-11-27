@@ -25,17 +25,17 @@ body {
 }
 
 #map {
-width: 80%;
- height: 500px;
- border-radius: 25px;
- border-color: #746186;
- border-width: thick;
- border-style: dotted;
- margin: 20px;
- margin-top: 200px;
- max-width: 100%;
- margin-left: auto;
- margin-right: auto;
+  width: 80%;
+  height: 500px;
+  border-radius: 25px;
+  border-color: #746186;
+  border-width: thick;
+  border-style: dotted;
+  margin: 20px;
+  margin-top: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
