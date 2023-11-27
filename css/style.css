@@ -25,13 +25,14 @@ body {
 }
 
 #map {
+  background-color: #F7BEC0;
+  color: #333;
+  font-family: monospace;
+  padding: 10px;
+  top: 0;
+  left: 0%;
+  position: fixed;
   width: 100%;
-  border: black;
-  height: 300px;
-  border-radius: 15px;
-  border-width: medium;
-  margin: 10px auto;
-  overflow: hidden;
 }
 
 a {
