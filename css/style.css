@@ -25,9 +25,9 @@ body {
 }
 
 #map {
-  width: 80%;
-  height: 500px;
-  border-radius: 25px;
+  width: 75%;
+  height: 475px;
+  border-radius: 30px;
   border-color: rgb(206, 219, 174);
   border-width: thick;
   margin: 20px;
