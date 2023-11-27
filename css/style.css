@@ -3,6 +3,26 @@ body {
   font-family: Georgia, Times, serif;
 }
 
+@media (min-width: 800px) {
+  body {
+    font-size: 60%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:bisque;
+    color:whitesmoke;
+    font-weight: 90;
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    font-size: 65%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:bisque;
+    color:whitesmoke;
+    font-weight: 100;
+  }
+}
+
 #navbar {
   background-color:#fefbd8;
   padding: 15px;
