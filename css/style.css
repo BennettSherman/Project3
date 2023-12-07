@@ -27,7 +27,7 @@ body {
   }
  }
 
- @media (min-width: 1200px) {
+ @media (min-width: 1000px) {
   body {
     background-color: bisque;
     color:whitesmoke;
