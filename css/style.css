@@ -1,27 +1,54 @@
 body {
+  font-size: 60%;
   background-color: #36486b;
   font-family: Georgia, Times, serif;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 800px) {
   body {
-    font-size: 65%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:bisque;
+    background-color: bisque;
     color:whitesmoke;
-    font-weight: 100;
   }
-}
+  section {
+    background-color: #618685;
+    margin: 12px auto;
+    max-width: 60%;
+    border: 8px;
+    padding: 15px
+  }
+  a {
+    text-decoration: none;
+    padding: 8px 14px;
+    color: whitesmoke;
+  }
+  p { 
+    color: #fff;
+    padding: 10px;
+  }
+ }
 
-@media (max-width: 600px) {
+ @media (min-width: 1200px) {
   body {
-    font-size: 60%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:bisque;
+    background-color: bisque;
     color:whitesmoke;
-    font-weight: 80;
   }
-}
+  section {
+    background-color: #618685;
+    margin: 15px auto;
+    max-width: 60%;
+    border: 10px;
+    padding: 17px
+  }
+  a {
+    text-decoration: none;
+    padding: 10px 17px;
+    color: whitesmoke;
+  }
+  p { 
+    color: #fff;
+    padding: 12px;
+  }
+ }
 
 #navbar {
   background-color:#fefbd8;
